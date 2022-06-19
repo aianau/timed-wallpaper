@@ -1,0 +1,36 @@
+{
+    "times": {
+        "midnight": {
+            "images": []
+        },
+        "morning blue hour": {
+            "images": []
+        },
+        "morning golden hour": {
+            "images": []
+        },
+        "sunrise": {
+            "images": []
+        },
+        "noon": {
+            "images": []
+        },
+        "evening golden hour": {
+            "images": [
+                "sunset.png",
+                "sunset.jpg"
+            ]
+        },
+        "evening blue hour": {
+            "images": []
+        },
+        "dusk": {
+            "images": [
+                "night.png",
+                "night-house.png",
+                "fireplace.png",
+                "fireplace-night-2.png"
+            ]
+        }
+    }
+}
