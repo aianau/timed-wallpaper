@@ -28,7 +28,18 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 :--------------------------------------   
+
 @echo on
+echo Installing and creating vritual environment...
+echo "%~dp0" 
+CD "%~dp0"
+python -m venv venv
+CALL venv\Scripts\activate
+python -m pip install -r requirements.txt
+pause
+
 echo Creating and running task...
 schtasks /create /sc ONSTART /tn timed-wallpaper /tr cd %~dp0\start.bat /f
 schtasks /run /tn timed-wallpaper
+
+pause
